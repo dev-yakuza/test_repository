@@ -10,6 +10,7 @@ rules:
       - When GitHub is renamed
     glob:
       - src/**/*.tsx
+      - src/**/*.js
     pass:
       - <a>Signup via GitHub</a>
     fail:
