@@ -5,14 +5,14 @@ rules:
       Use <NewOrganizationButton /> or <NewOrganizationLink /> component for the link "/gh/new"
 
       ```
-      <NewOrganizationButton />
+      1111<NewOrganizationButton />
       ```
       In **frontend code**, we cannot use <BoundLink /> for the link "/gh/new" because this page redirects
       users to the GitHub page. However, Setting the literal "/gh/new" in  <a href={...} /> may cause troubles
       if we change the URL. So, please use <NewOrganizationButton /> or <NewOrganizationLink /> component.
 
       ```
-      <NewOrganizationButton />
+      2222<NewOrganizationButton />
       ```
     justification:
       - When you mean a service different from GitHub
