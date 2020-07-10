@@ -2,25 +2,11 @@ rules:
   - id: com.example.github
     pattern: Github
     message: |
-      Use <NewOrganizationButton /> or <NewOrganizationLink /> component for the link "/gh/new"
+      Use `<NewOrganizationButton />` or `<NewOrganizationLink />` component for the link "/gh/new"
 
-      In **frontend code**, we cannot use <BoundLink /> for the link "/gh/new" because this page redirects
-      users to the GitHub page. However, Setting the literal "/gh/new" in  <a href={...} /> may cause troubles
-      if we change the URL. So, please use <NewOrganizationButton /> or <NewOrganizationLink /> component.
-
-      ```
-      1111
-      <NewOrganizationButton />
-      ```
-
-      In **frontend code**, we cannot use <BoundLink /> for the link "/gh/new" because this page redirects
-      users to the GitHub page. However, Setting the literal "/gh/new" in  <a href={...} /> may cause troubles
-      if we change the URL. So, please use <NewOrganizationButton /> or <NewOrganizationLink /> component.
-
-      ```
-      2222
-      <NewOrganizationButton />
-      ```
+      In frontend code, we cannot use `<BoundLink />` for the link "/gh/new" because this page redirects
+      users to the GitHub page. However, Setting the literal "/gh/new" in `<a href={...} />` may cause troubles
+      if we change the URL. So, please use `<NewOrganizationButton />` or `<NewOrganizationLink />` component.
     justification:
       - When you mean a service different from GitHub
       - When GitHub is renamed
