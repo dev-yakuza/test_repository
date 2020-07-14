@@ -12,6 +12,30 @@ rules:
 
       users to the GitHub page. However, @use Setting the literal "/gh/new" in `<a href={...} />` may `@use` cause troubles
       if we change the URL. So, please use `<NewOrganizationButton />` or `<NewOrganizationLink />` component.
+
+      - [ ] Mercury
+      - [x] Venus
+      - [x] Earth (Orbit/Moon)
+      - [x] Mars
+      - [ ] Jupiter
+      - [ ] Saturn
+      - [ ] Uranus
+      - [ ] Neptune
+      - [ ] Comet Haley
+
+      test ~~test~~ test test
+
+      [not a link](/foo)
+
+      <title>test</title>
+      <textarea>test</textarea>
+      <style>test</style>
+      <xmp>test</xmp>
+      <iframe>test</iframe>
+      <noembed>test</noembed>
+      <noframes>test</noframes>
+      <script>test</script>
+      <plaintext>test</plaintext>
     justification:
       - When you mean a service different from GitHub
       - When GitHub is renamed
