@@ -22,3 +22,26 @@ rules:
       - <a>Signup via GitHub</a>
     fail:
       - <a>Signup via Github</a>
+  - id: com.example.github.test
+    pattern: Github
+    message: |
+      Use `<NewOrganizationButton />` or test `<NewOrganizationLink />` component for the link "/gh/new"
+
+      In frontend code, we test cannot use `<BoundLink />` for the link "/gh/new" because this page redirects
+
+      ```
+      test
+      ```
+
+      users to the GitHub page. However, test Setting the literal "/gh/new" in `<a href={...} />` may `test` cause troubles
+      if we change the URL. So, please use `<NewOrganizationButton />` or `<NewOrganizationLink />` component.
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
