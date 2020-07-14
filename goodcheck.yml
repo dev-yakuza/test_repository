@@ -33,8 +33,11 @@ rules:
       test
       ```
 
-      users to the GitHub page. However, test Setting the literal "/gh/new" in `<a href={...} />` may `test` cause troubles
-      if we change the URL. So, please use `<NewOrganizationButton />` or `<NewOrganizationLink />` component.
+      Line is too long. [151/100]
+
+      | Rule | Severity | String | Number | Bool | An array | Empty |
+      | ---- | -------- | ------ | ------ | ---- | -------- | ----- |
+      | `Layout/LineLength` | `warning` | Layout | 56 | Yes | `abc`, `123`, - | - |
     justification:
       - When you mean a service different from GitHub
       - When GitHub is renamed
