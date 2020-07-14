@@ -27,15 +27,15 @@ rules:
 
       [not a link](/foo)
 
-      <title>test</title>
-      <textarea>test</textarea>
-      <style>test</style>
-      <xmp>test</xmp>
-      <iframe>test</iframe>
-      <noembed>test</noembed>
-      <noframes>test</noframes>
-      <script>test</script>
-      <plaintext>test</plaintext>
+      <title>test1</title>
+      <textarea>test2</textarea>
+      <style>test3</style>
+      <xmp>test4</xmp>
+      <iframe>test5</iframe>
+      <noembed>test6</noembed>
+      <noframes>test7</noframes>
+      <script>test8</script>
+      <plaintext>test9</plaintext>
     justification:
       - When you mean a service different from GitHub
       - When GitHub is renamed
