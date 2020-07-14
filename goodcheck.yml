@@ -36,6 +36,8 @@ rules:
       <noframes>test7</noframes>
       <script>test8</script>
       <plaintext>test9</plaintext>
+      <http://foo.bar.baz>
+
     justification:
       - When you mean a service different from GitHub
       - When GitHub is renamed
