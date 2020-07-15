@@ -74,3 +74,39 @@ rules:
       - <a>Signup via GitHub</a>
     fail:
       - <a>Signup via Github</a>
+  - id: com.example.github.test2
+    pattern: Github
+    message: |
+      @use
+      ```
+      @use
+      ```
+      `@use`
+      @<!-- -->use
+      a @ b
+      @-aaa
+      @aaa-
+      @a-aa
+      @a--aa
+      @a1a1a1
+      user@foo.com
+      USER@FOO.COM
+      @A-AA
+      @A--AA
+      @A1A1A1
+      [mail](mailto:user@foo.com)
+      [not a link](/foo)
+      test ~~test~~ ~~@test~~ test
+      | column1 | column2 |
+      | ------- | ------- |
+      | column3 | @column4 |
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
