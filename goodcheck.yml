@@ -82,21 +82,83 @@ rules:
       @use
       ```
       `@use`
-      @<!-- -->use
-      a @ b
-      @-aaa
-      @aaa-
-      @a-aa
-      @a--aa
-      @a1a1a1
+      @<!-- -->use a @ b @-aaa @aaa- @a-aa @a--aa @a1a1a1
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
+  - id: com.example.github.test3
+    pattern: Github
+    message: |
       user@foo.com
       USER@FOO.COM
       @A-AA
       @A--AA
       @A1A1A1
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
+  - id: com.example.github.test4
+    pattern: Github
+    message: |
       [mail](mailto:user@foo.com)
       [not a link](/foo)
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
+  - id: com.example.github.test5
+    pattern: Github
+    message: |
+      - [ ] Mercury
+      - [x] Venus
+      - [ ] @foo
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
+  - id: com.example.github.test6
+    pattern: Github
+    message: |
       test ~~test~~ ~~@test~~ test
+    justification:
+      - When you mean a service different from GitHub
+      - When GitHub is renamed
+    glob:
+      - src/**/*.tsx
+      - src/**/*.js
+    pass:
+      - <a>Signup via GitHub</a>
+    fail:
+      - <a>Signup via Github</a>
+  - id: com.example.github.test7
+    pattern: Github
+    message: |
       | column1 | column2 |
       | ------- | ------- |
       | column3 | @column4 |
